@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+:root {
+    color: black;
+    --padding: 1.3rem;
+}
+
+div.container {
+    display: grid;
+    min-height: 100vh;
+    grid: 
+    "sidebar header" 1fr
+    "sidebar article" 7fr / 1fr 4fr
+    ;
+}
+
+.header {
+    grid-area: header;
+    padding: var(--padding);
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(49, 171, 241);
+    color: white;
+    padding: var(--padding);
+}
+
+.article {
+    grid-area: article;
+    background-color: #eee;
+    display: grid;
+    grid: 1fr 1fr / 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    padding: var(--padding);
+}
+
+
+
+.announcements {
+    grid-area: 1 / 3 / span 1 / span 1;
+}
+
+.trending {
+    grid-area: 2 / 3 / span 1 / span 1;
+}
+
+.article section.content {
+    background-color: white;
+    height: 100%;
+}
