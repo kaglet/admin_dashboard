@@ -59,7 +59,7 @@ div.container {
 }
 
 .projects-container {
-    flex-grow: 1;
+    flex: 1;
     display: grid;
     grid: auto-flow 1fr / repeat(2, 1fr);
     gap: var(--gap);
@@ -76,8 +76,17 @@ div.container {
     background-color: white;
 }
 
+.announcements, .trending {
+    display: flex;
+    flex-direction: column;
+}
+
 .announcements > .content, .trending > .content {
-    min-height: 100%;
+    flex: 1;
+}
+
+h2 {
+    margin-bottom: 0.4rem;
 }
 
 /*ARTICLE INNER LAYOUT DONE*/
