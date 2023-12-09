@@ -37,7 +37,7 @@ div.container {
     grid-area: article;
     background-color: #eee;
     display: grid;
-    grid: 4fr 1fr / 2fr 1fr;
+    grid: 1fr / 5fr 2fr;
     gap: var(--gap);
     padding: var(--padding) var(--padding) calc(var(--padding) + 2.8rem) var(--padding);
 }
@@ -49,12 +49,19 @@ div.container {
     border-radius: 0.9rem;
 }
 
-.cards-container {
+.article > .wrapper {
     grid-area: 1 / 1 / 3 / 2;
+}
+
+/*This is a block level item with grid-items*/
+/*Hence it's sized to content*/
+/*Others are grid-items which auto-stretch to cell*/
+/*Hence give it a min-height or height*/
+/*But allow it to get bigger I guess, which I hope is the right choice*/
+.projects-container {
+    min-height: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto [cards-start] repeat(2, 1fr);
-    grid-auto-rows: 1fr;
+    grid: auto-flow 1fr / repeat(2, 1fr);
     gap: var(--gap);
 }
 
@@ -71,10 +78,6 @@ div.container {
 
 .article section.content {
     background-color: white;
-}
-
-.cards-container > h2 {
-    grid-column: 1 / -1;
 }
 
 /*ARTICLE INNER LAYOUT DONE*/
