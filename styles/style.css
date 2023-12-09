@@ -10,6 +10,7 @@
     --padding: 1.6rem;
     --gap: 2rem;
     --heading-gap: 0.4rem;
+    --h2-size: 1.4rem;
 }
 
 /*OVERALL LAYOUT START*/
@@ -72,9 +73,6 @@ div.container {
 
 .side-panel {
     grid-area: 1 / 2 / 3 / 3;
-    display: grid;
-    grid: auto-flow 1fr / 1fr;
-    gap: var(--gap);
 }
 
 .article section.content {
@@ -82,18 +80,23 @@ div.container {
 }
 
 .announcements, .trending {
+    height: calc(var(--gap) + 16rem + 6.8rem + var(--h2-size));
     display: flex;
     flex-direction: column;
+}
+
+.side-panel > section + section {
+    margin-top: var(--gap);
 }
 
 .announcements > .content, .trending > .content {
     /*content can flex but has a max-height*/
     flex: 1;
-    max-height: 25rem;
 }
 
 h2 {
     margin-bottom: 0.4rem;
+    font-size: var(--h2-size);
 }
 
 /*ARTICLE INNER LAYOUT DONE*/
