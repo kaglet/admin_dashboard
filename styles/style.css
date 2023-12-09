@@ -9,6 +9,7 @@
     color: black;
     --padding: 1.6rem;
     --gap: 2rem;
+    --heading-gap: 0.4rem;
 }
 
 /*OVERALL LAYOUT START*/
@@ -38,8 +39,9 @@ div.container {
     background-color: #eee;
     display: grid;
     grid: 1fr / 5fr 2fr;
-    gap: var(--gap);
-    padding: var(--padding) var(--padding) calc(var(--padding) + 2.8rem) var(--padding);
+    /*column gap only for 2 columns not in preparation for new rows*/
+    column-gap: var(--gap);
+    padding: var(--padding) var(--padding) var(--padding) var(--padding);
 }
 
 /*OVERALL LAYOUT DONE*/
@@ -53,11 +55,6 @@ div.container {
     grid-area: 1 / 1 / 3 / 2;
 }
 
-/*This is a block level item with grid-items*/
-/*Hence it's sized to content*/
-/*Others are grid-items which auto-stretch to cell*/
-/*Hence give it a min-height or height*/
-/*But allow it to get bigger I guess, which I hope is the right choice*/
 .projects-container {
     min-height: 100%;
     display: grid;
@@ -72,12 +69,12 @@ div.container {
     gap: var(--gap);
 }
 
-.side-panel > section {
-    display: grid;
-}
-
 .article section.content {
     background-color: white;
+}
+
+.announcements > .content, .trending > .content {
+    min-height: 100%;
 }
 
 /*ARTICLE INNER LAYOUT DONE*/
