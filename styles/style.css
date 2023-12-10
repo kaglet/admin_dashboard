@@ -84,6 +84,14 @@ div.container {
     display: inline-block;
 }
 
+.projects-container .options {
+    margin-left: auto;
+}
+
+.projects-container .options > div + div {
+    margin-left: 1rem;
+}
+
 /*.wrapper .projects is now set to display flex block*/
 .wrapper.projects {
     grid-area: 1 / 1 / 3 / 2;
@@ -348,6 +356,18 @@ input[type="search"]:focus {
     background-image: url(/assets/view-dashboard.svg);
     height: 45px;
     width: 45px;
+}
+
+.projects-container .icon.favorite {
+    background-image: url(/assets/star-plus-outline.svg);
+}
+
+.projects-container .icon.live {
+    background-image: url(/assets/eye-plus-outline.svg);
+}
+
+.projects-container .icon.repo {
+    background-image: url(/assets/source-fork.svg);
 }
 
 /*ICONS END*/
