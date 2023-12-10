@@ -11,10 +11,21 @@
     --gap: 2rem;
     --heading-gap: 0.4rem;
     --h2-size: 1.4rem;
+    --accent-clr: rgb(246, 187, 39);
+    --main-clr: rgb(49, 171, 241);
+    --neutral-bg-clr: #eee;
+    --against-text-contrast-clr: white;
+    --bold-heading-clr: black;
+    --muted-text-clr: #777;
+    --light-text-clr: white; 
 }
 
 p {
-    color: #777;
+    color: var(--muted-text-clr);
+}
+
+h1, h2, h3, h4 {
+    color: var(--bold-heading-clr);
 }
 
 /*OVERALL LAYOUT START*/
@@ -32,16 +43,16 @@ div.container {
     padding: var(--padding);
 }
 
-.sidebar {
+.sidebar, .sidebar h2 {
     grid-area: sidebar;
-    background-color: rgb(49, 171, 241);
-    color: white;
+    background-color: var(--main-clr);
+    color: var(--light-text-clr);
     padding: var(--padding);
 }
 
 .article {
     grid-area: article;
-    background-color: #eee;
+    background-color: var(--neutral-bg-clr);
     display: grid;
     grid: 1fr / 5fr 2fr;
     /*column gap only for 2 columns not in preparation for new rows*/
@@ -57,7 +68,7 @@ div.container {
 }
 
 .projects-container > .content {
-    border-left: 0.6rem solid rgb(246, 187, 39);
+    border-left: 0.6rem solid var(--accent-clr);
     min-height: 20rem;
 }
 
@@ -126,7 +137,7 @@ section.announcement:not(:last-child) {
 }
 
 .pic {
-    background-color: rgb(246, 187, 39);
+    background-color: var(--accent-clr);
     min-height: 80px;
     min-width: 80px;
     border-radius: 50%;
@@ -138,3 +149,9 @@ h2 {
 }
 
 /*ARTICLE INNER LAYOUT DONE*/
+
+/*HEADER LAYOUT START*/
+
+
+
+/*HEADER LAYOUT END*/
