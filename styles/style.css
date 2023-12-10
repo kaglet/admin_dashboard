@@ -93,7 +93,7 @@ div.container {
     flex: 1 1 auto;
 }
 
-.side-panel .content section:not(:last-child) {
+section.announcement:not(:last-child) {
     border-bottom: 1px solid #eee;
     margin-bottom: 1rem;
 }
@@ -115,6 +115,21 @@ div.container {
 .announcements > .content, .trending > .content {
     /*content can flex but has a max-height*/
     flex: 1;
+}
+
+.profile {
+    display: grid;
+    grid-template: 1fr / 1fr 4fr;
+    align-items: center;
+    justify-items: start;
+    gap: 1rem;
+}
+
+.pic {
+    background-color: rgb(246, 187, 39);
+    min-height: 80px;
+    min-width: 80px;
+    border-radius: 50%;
 }
 
 h2 {
