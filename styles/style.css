@@ -70,7 +70,6 @@ div.container {
 
 .projects-container > .content {
     border-left: 0.6rem solid var(--accent-clr);
-    min-height: 20rem;
     padding: var(--padding);
     display: flex;
     flex-direction: column;
@@ -102,7 +101,7 @@ div.container {
 .projects-container {
     flex: 1;
     display: grid;
-    grid: 1fr 1fr 1fr / repeat(2, 1fr);
+    grid: repeat(3, 20rem) / repeat(2, 1fr);
     grid-auto-rows: 1fr;
     gap: var(--gap);
 }
