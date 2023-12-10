@@ -13,6 +13,10 @@
     --h2-size: 1.4rem;
 }
 
+p {
+    color: #777;
+}
+
 /*OVERALL LAYOUT START*/
 div.container {
     display: grid;
@@ -79,12 +83,26 @@ div.container {
     max-height: 1062px;
 }
 
+.side-panel .content {
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+}
+
+.side-panel .content section {
+    flex: 1 1 auto;
+}
+
+.side-panel .content section:not(:last-child) {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+}
+
 .article section.content {
     background-color: white;
 }
 
 .announcements, .trending {
-    /*This rem calculation is not sustainable with different font size preferences and hardcoded values too**/
     display: flex;
     flex-direction: column;
     flex: 1;
