@@ -152,6 +152,27 @@ h2 {
 
 /*HEADER LAYOUT START*/
 
+.header {
+    display: grid;
+    grid: 1fr 2fr / 5fr 2fr;
+    gap: 1.3rem;
+}
 
+.project-options {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.project-options button {
+    flex: 1;
+    padding: 0.6rem 1.6rem;
+    border-radius: 1.3rem;
+    appearance: none;
+    background-color: var(--main-clr);
+    color: var(--light-text-clr);
+    border: none;
+    font-weight: 700;
+}
 
 /*HEADER LAYOUT END*/
