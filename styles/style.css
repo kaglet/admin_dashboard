@@ -138,8 +138,8 @@ section.announcement:not(:last-child) {
 
 .trending .pic {
     background-color: var(--accent-clr);
-    min-height: 80px;
-    min-width: 80px;
+    min-height: 60px;
+    min-width: 60px;
     border-radius: 50%;
 }
 
@@ -193,10 +193,12 @@ input[type="search"] {
     border: none;
     padding: 0.3rem 0.7rem;
     flex: 1;
+    height: 90px;
 }
 
 input[type="search"]:focus {
     outline: 2px solid var(--muted-text-clr);
+    
 }
 
 .profile-options {
