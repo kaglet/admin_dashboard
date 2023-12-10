@@ -18,6 +18,7 @@
     --bold-heading-clr: black;
     --muted-text-clr: #777;
     --light-text-clr: white; 
+    --profile-photo-small-size: 55px;
 }
 
 p {
@@ -138,8 +139,8 @@ section.announcement:not(:last-child) {
 
 .trending .pic {
     background-color: var(--accent-clr);
-    min-height: 60px;
-    min-width: 60px;
+    min-height: var(--profile-photo-small-size);
+    min-width: var(--profile-photo-small-size);
     border-radius: 50%;
 }
 
@@ -154,7 +155,7 @@ h2 {
 
 .header {
     display: grid;
-    grid: 1fr 2fr / 5fr 2fr;
+    grid: 1fr 2fr / 5fr 3fr;
     gap: 1.3rem;
 }
 
@@ -182,8 +183,8 @@ h2 {
 }
 
 .search .pic {
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     background-color: pink;
 }
 
@@ -204,17 +205,47 @@ input[type="search"]:focus {
 .profile-options {
     display: flex;
     align-items: center;
+    gap: 1.2rem;
+    justify-content: flex-end;
 }
 
 .profile-options > p {
     color: var(--bold-heading-clr);
-    flex: 1;
+    font-weight: 700;
 }
 
 .profile-options .pic {
-    height: 30px;
-    width: 30px;
+    height: var(--profile-photo-small-size);
+    width: var(--profile-photo-small-size);
+    border-radius: 50%;
     background-color: pink;
 }
 
+.user-greeting {
+    display: grid;
+    grid-template: 1fr / auto 5fr;
+    column-gap: 1.5rem;
+}
+
+.greeting {
+    align-self: center;
+}
+
+.greeting > p:first-child {
+    color: var(--bold-heading-clr);
+    font-weight: 700;
+}
+
+.greeting > p:last-child {
+    color: var(--bold-heading-clr);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.user-greeting .pic {
+    background-color: pink;
+    height: calc(var(--profile-photo-small-size) + 15px);
+    width: calc(var(--profile-photo-small-size) + 15px);
+    border-radius: 50%;
+}
 /*HEADER LAYOUT END*/
