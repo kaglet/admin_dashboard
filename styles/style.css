@@ -177,6 +177,7 @@ h2 {
 
 .search {
     display: flex;
+    gap: 1rem;
 }
 
 .search .pic {
@@ -209,7 +210,8 @@ input[type="search"]:focus {
 
 .profile-options .pic {
     height: 80px;
-    min-width: 80px;
+    width: 80px;
+    background-color: pink;
 }
 
 /*HEADER LAYOUT END*/
