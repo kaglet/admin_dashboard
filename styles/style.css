@@ -71,6 +71,17 @@ div.container {
 .projects-container > .content {
     border-left: 0.6rem solid var(--accent-clr);
     min-height: 20rem;
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-container .desc {
+    flex: 1;
+}
+
+.projects-container .icon {
+    display: inline-block;
 }
 
 /*.wrapper .projects is now set to display flex block*/
