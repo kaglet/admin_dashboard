@@ -280,4 +280,68 @@ input[type="search"]:focus {
     padding: 0.5rem 0px;
 }
 
+.sidebar .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
 /*SIDEBAR LAYOUT END*/
+
+/*ICONS START*/
+.icon {
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    filter: none;
+}
+
+.sidebar .icon {
+    filter: invert(1);
+}
+
+.profile-options .icon {
+    background-image: url(/assets/bell-ring-outline.svg);
+}
+
+.search .icon {
+    background-image: url(/assets/magnify.svg);
+}
+
+.icon.home {
+    background-image: url(/assets/home.svg);
+}
+
+.icon.profile {
+    background-image: url(/assets/account-box-outline.svg);
+}
+
+.icon.msgs {
+    background-image: url(/assets/message.svg);
+}
+
+.icon.history {
+    background-image: url(/assets/history.svg);
+}
+
+.icon.tasks {
+    background-image: url(/assets/format-list-checks.svg);
+}
+
+.icon.communities {
+    background-image: url(/assets/account-group.svg);
+}
+
+.icon.settings {
+    background-image: url(/assets/cog.svg);
+}
+
+.icon.support {
+    background-image: url(/assets/help-box-multiple.svg);
+}
+
+.icon.privacy {
+    background-image: url(/assets/shield-check.svg);
+}
+
+/*ICONS END*/
