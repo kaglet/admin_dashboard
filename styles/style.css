@@ -344,4 +344,10 @@ input[type="search"]:focus {
     background-image: url(/assets/shield-check.svg);
 }
 
+.icon.dashboard {
+    background-image: url(/assets/view-dashboard.svg);
+    height: 45px;
+    width: 45px;
+}
+
 /*ICONS END*/
