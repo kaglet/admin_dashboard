@@ -54,7 +54,7 @@ div.container {
 
 .projects-container > .content {
     border-left: 0.6rem solid rgb(246, 187, 39);
-    min-height: 16rem;
+    min-height: 20rem;
 }
 
 /*.wrapper .projects is now set to display flex block*/
@@ -67,12 +67,16 @@ div.container {
 .projects-container {
     flex: 1;
     display: grid;
-    grid: auto-flow 1fr / repeat(2, 1fr);
+    grid: 1fr 1fr 1fr / repeat(2, 1fr);
+    grid-auto-rows: 1fr;
     gap: var(--gap);
 }
 
 .side-panel {
     grid-area: 1 / 2 / 3 / 3;
+    display: flex;
+    flex-direction: column;
+    max-height: 1062px;
 }
 
 .article section.content {
@@ -80,9 +84,10 @@ div.container {
 }
 
 .announcements, .trending {
-    height: calc(var(--gap) + 16rem + 6.8rem + var(--h2-size));
+    /*This rem calculation is not sustainable with different font size preferences and hardcoded values too**/
     display: flex;
     flex-direction: column;
+    flex: 1;
 }
 
 .side-panel > section + section {
