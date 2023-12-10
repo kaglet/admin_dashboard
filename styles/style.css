@@ -136,7 +136,7 @@ section.announcement:not(:last-child) {
     gap: 1rem;
 }
 
-.pic {
+.trending .pic {
     background-color: var(--accent-clr);
     min-height: 80px;
     min-width: 80px;
@@ -155,8 +155,7 @@ h2 {
 .header {
     display: grid;
     grid: 1fr 2fr / 5fr 2fr;
-    row-gap: 1rem;
-    column-gap: 1.7rem;
+    gap: 1.3rem;
 }
 
 .project-options {
@@ -178,7 +177,12 @@ h2 {
 
 .search {
     display: flex;
-    font-size: large;
+}
+
+.search .pic {
+    height: 30px;
+    width: 30px;
+    background-color: pink;
 }
 
 input[type="search"] {
@@ -204,7 +208,7 @@ input[type="search"]:focus {
 }
 
 .profile-options .pic {
-    min-height: 80px;
+    height: 80px;
     min-width: 80px;
 }
 
