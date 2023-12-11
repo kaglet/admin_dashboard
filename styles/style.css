@@ -51,7 +51,6 @@ div.container {
     grid-area: sidebar;
     background-color: var(--main-clr);
     color: var(--secondary-text-clr);
-    padding: var(--padding);
 }
 
 .article {
@@ -279,6 +278,14 @@ input[type="search"]:focus {
 .sidebar, .sidebar h2 {
     font-size: 1.5rem;
     font-weight: 700;
+}
+
+.sidebar .wrapper {
+    padding: 0.5rem var(--padding);
+}
+
+.sidebar .wrapper.dashboard {
+    padding: 1.5rem var(--padding) 0px;
 }
 
 .sidebar h2 {
