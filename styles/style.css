@@ -178,15 +178,15 @@ section.announcement:not(:last-child) {
 }
 
 .trending .profile:nth-child(1) .pic {
-    background-image: url(/assets/pics/3d-render-avatar-character-2/9334410.jpg);
+    background-image: url(../assets/pics/3d-render-avatar-character-2/9334410.jpg);
 }
 
 .trending .profile:nth-child(3) .pic {
-    background-image: url(/assets/pics/3d-render-avatar-character-1/9334183.jpg);
+    background-image: url(../assets/pics/3d-render-avatar-character-1/9334183.jpg);
 }
 
 .trending .profile:nth-child(4) .pic {
-    background-image: url(/assets/pics/3d-render-avatar-character-2/9334410.jpg);
+    background-image: url(../assets/pics/3d-render-avatar-character-2/9334410.jpg);
 }
 
 .pic {
@@ -195,7 +195,7 @@ section.announcement:not(:last-child) {
 }
 
 .pic.me {
-    background-image: url(/assets/pics/3d-render-avatar-character/9334392.jpg);
+    background-image: url(../assets/pics/3d-render-avatar-character/9334392.jpg);
 }
 
 h2 {
@@ -363,65 +363,65 @@ input[type="search"]:focus {
 }
 
 .profile-options .icon {
-    background-image: url(/assets/bell-ring-outline.svg);
+    background-image: url(../assets/bell-ring-outline.svg);
 }
 
 .search .icon {
-    background-image: url(/assets/magnify.svg);
+    background-image: url(../assets/magnify.svg);
 }
 
 .icon.home {
-    background-image: url(/assets/home.svg);
+    background-image: url(../assets/home.svg);
 }
 
 .icon.profile {
-    background-image: url(/assets/account-box-outline.svg);
+    background-image: url(../assets/account-box-outline.svg);
 }
 
 .icon.msgs {
-    background-image: url(/assets/message.svg);
+    background-image: url(../assets/message.svg);
 }
 
 .icon.history {
-    background-image: url(/assets/history.svg);
+    background-image: url(../assets/history.svg);
 }
 
 .icon.tasks {
-    background-image: url(/assets/format-list-checks.svg);
+    background-image: url(../assets/format-list-checks.svg);
 }
 
 .icon.communities {
-    background-image: url(/assets/account-group.svg);
+    background-image: url(../assets/account-group.svg);
 }
 
 .icon.settings {
-    background-image: url(/assets/cog.svg);
+    background-image: url(../assets/cog.svg);
 }
 
 .icon.support {
-    background-image: url(/assets/help-box-multiple.svg);
+    background-image: url(../assets/help-box-multiple.svg);
 }
 
 .icon.privacy {
-    background-image: url(/assets/shield-check.svg);
+    background-image: url(../assets/shield-check.svg);
 }
 
 .icon.dashboard {
-    background-image: url(/assets/view-dashboard.svg);
+    background-image: url(../assets/view-dashboard.svg);
     height: 45px;
     width: 45px;
 }
 
 .projects-container .icon.favorite {
-    background-image: url(/assets/star-plus-outline.svg);
+    background-image: url(../assets/star-plus-outline.svg);
 }
 
 .projects-container .icon.live {
-    background-image: url(/assets/eye-plus-outline.svg);
+    background-image: url(../assets/eye-plus-outline.svg);
 }
 
 .projects-container .icon.repo {
-    background-image: url(/assets/source-fork.svg);
+    background-image: url(../assets/source-fork.svg);
 }
 
 /*ICONS END*/
