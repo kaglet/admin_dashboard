@@ -188,7 +188,7 @@ h2 {
     font-size: calc(var(--h2-size) - 0.11rem);
 }
 
-button {
+button, input[type="search"] {
     font-size: 1.1rem;
 }
 
