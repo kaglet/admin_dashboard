@@ -237,6 +237,11 @@ button, input[type="search"] {
     color: var(--secondary-text-clr);
     border: none;
     font-weight: 700;
+    transition: 0.1s linear transform;
+}
+
+.project-options button:active {
+    transform: scale(0.9);
 }
 
 .search {
