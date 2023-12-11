@@ -69,7 +69,7 @@ button:hover {
     box-shadow: 0px 2px 6px grey;
 }
 
-.sidebar .wrapper:hover {
+.sidebar .wrapper:hover:not(.dashboard) {
     background-color: var(--accent-clr-hover);
 }
 
