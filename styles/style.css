@@ -25,7 +25,6 @@
     --profile-photo-small-size: 55px;
     --pic-placeholder-clr: var(--accent-clr);
     --divider-clr: var(--accent-clr);
-    --box-shadow: ;
 }
 
 h1, h2, h3, h4 {
@@ -257,6 +256,7 @@ input[type="search"] {
     border: none;
     padding: 0.5rem 0.7rem;
     flex: 1;
+    box-shadow: -1px 1px 4px grey inset;
 }
 
 input[type="search"]:focus {
