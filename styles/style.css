@@ -315,6 +315,11 @@ input[type="search"]:focus {
     width: 30px;
     background-repeat: no-repeat;
     filter: none;
+    transition: 0.1s linear transform;
+}
+
+.icon:hover {
+    transform: scale(1.3);
 }
 
 .sidebar .icon {
