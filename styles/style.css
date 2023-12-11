@@ -23,7 +23,7 @@
     --secondary-text-clr: white; 
     --profile-photo-small-size: 55px;
     --pic-placeholder-clr: var(--accent-clr);
-    --divider-clr: #eac435;
+    --divider-clr: var(--accent-clr);
     --box-shadow: ;
 }
 
