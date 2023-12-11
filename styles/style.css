@@ -23,6 +23,7 @@
     --profile-photo-small-size: 55px;
     --pic-placeholder-clr: var(--accent-clr);
     --divider-clr: #eac435;
+    --box-shadow: ;
 }
 
 h1, h2, h3, h4 {
@@ -60,6 +61,7 @@ div.container {
     /*column gap only for 2 columns not in preparation for new rows*/
     column-gap: var(--gap);
     padding: var(--padding) var(--padding) var(--padding) var(--padding);
+    box-shadow: 2px 2px 6px grey inset;
 }
 
 /*OVERALL LAYOUT DONE*/
@@ -67,6 +69,7 @@ div.container {
 /*ARTICLE INNER LAYOUT*/
 .content {
     border-radius: 0.9rem;
+    box-shadow: 2px 2px 6px grey;
 }
 
 .projects-container > .content {
