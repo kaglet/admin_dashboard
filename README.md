@@ -7,7 +7,7 @@ Find the live demo [here](kaglet.github.io/admin_dashboard).
 This is what the website should initially look like at 100% full screen:
 
 ![image](https://github.com/kaglet/admin_dashboard/assets/96872447/81a9dc13-4f68-4136-9c65-bba274cc2f6b)
-![image](https://github.com/kaglet/admin_dashboard/assets/96872447/57daf91c-ab25-476e-a32f-ccb76a8feaa0)
+![image](https://github.com/kaglet/admin_dashboard/assets/96872447/a427fb82-4946-4758-8319-c9f303afa920)
 
 ## Credits
 
