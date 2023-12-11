@@ -6,23 +6,23 @@
 }
 
 :root {
-    color: black;
+    color: var(--primary-text-clr);
     --padding: 1.6rem;
     --gap: 2rem;
     --heading-gap: 0.4rem;
     --h2-size: 1.4rem;
-    --accent-clr: rgb(246, 187, 39);
-    --main-clr: rgb(49, 171, 241);
-    --neutral-bg-clr: #eee;
-    --against-text-contrast-clr: white;
+    /*Define main colors and whichever matches matches.*/
+    --accent-clr: #eac435;
+    --main-clr: #035e7b;
+    --bg-clr: #b95f89;
+    --card-clr: #FA824C;
     --bold-heading-clr: black;
     --muted-text-clr: #777;
-    --light-text-clr: white; 
+    --primary-text-clr: black;
+    --secondary-text-clr: white; 
     --profile-photo-small-size: 55px;
-}
-
-p {
-    color: var(--muted-text-clr);
+    --pic-placeholder-clr: var(--accent-clr);
+    --divider-clr: #eac435;
 }
 
 h1, h2, h3, h4 {
@@ -42,18 +42,19 @@ div.container {
 .header {
     grid-area: header;
     padding: var(--padding);
+    background-color: var(--card-clr);
 }
 
 .sidebar {
     grid-area: sidebar;
     background-color: var(--main-clr);
-    color: var(--light-text-clr);
+    color: var(--secondary-text-clr);
     padding: var(--padding);
 }
 
 .article {
     grid-area: article;
-    background-color: var(--neutral-bg-clr);
+    background-color: var(--bg-clr);
     display: grid;
     grid: 1fr / 5fr 2fr;
     /*column gap only for 2 columns not in preparation for new rows*/
@@ -124,12 +125,12 @@ div.container {
 }
 
 section.announcement:not(:last-child) {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--divider-clr);
     margin-bottom: 1rem;
 }
 
 .article section.content {
-    background-color: white;
+    background-color: var(--card-clr);
 }
 
 .announcements, .trending {
@@ -189,7 +190,7 @@ h2 {
     border-radius: 1.3rem;
     appearance: none;
     background-color: var(--main-clr);
-    color: var(--light-text-clr);
+    color: var(--secondary-text-clr);
     border: none;
     font-weight: 700;
 }
@@ -200,15 +201,9 @@ h2 {
     align-items: center;
 }
 
-.search .pic {
-    height: 50px;
-    width: 50px;
-    background-color: pink;
-}
-
 input[type="search"] {
     appearance: none;
-    background-color: var(--neutral-bg-clr);
+    background-color: var(--bg-clr);
     border-radius: 1.3rem;
     border: none;
     padding: 0.5rem 0.7rem;
@@ -236,7 +231,7 @@ input[type="search"]:focus {
     height: var(--profile-photo-small-size);
     width: var(--profile-photo-small-size);
     border-radius: 50%;
-    background-color: pink;
+    background-color: var(--pic-placeholder-clr);
 }
 
 .user-greeting {
@@ -261,7 +256,7 @@ input[type="search"]:focus {
 }
 
 .user-greeting .pic {
-    background-color: pink;
+    background-color: var(--pic-placeholder-clr);
     height: calc(var(--profile-photo-small-size) + 15px);
     width: calc(var(--profile-photo-small-size) + 15px);
     border-radius: 50%;
@@ -270,13 +265,13 @@ input[type="search"]:focus {
 
 /*SIDEBAR LAYOUT START*/
 .sidebar, .sidebar h2 {
-    color: var(--against-text-contrast-clr);
     font-size: 1.5rem;
     font-weight: 700;
 }
 
 .sidebar h2 {
     font-size: 2rem;
+    color: var(--secondary-text-clr);
 }
 
 .sidebar > section {
