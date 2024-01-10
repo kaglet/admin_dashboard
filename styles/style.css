@@ -15,9 +15,9 @@
     /*Define main colors and whichever matches matches.*/
     --accent-clr: rgb(241, 241, 241);
     --accent-clr-hover: #f8a2a5;
-    --main-clr: #329F5B;
-    --bg-clr: #8FD5A6;
-    --card-clr: rgb(255, 255, 255);
+    --main-clr: #1B2845;
+    --bg-clr: #314776;
+    --card-clr: rgb(217, 222, 245);
     --bold-heading-clr: 040403;
     --muted-text-clr: #777;
     --box-shadow: transparent;
