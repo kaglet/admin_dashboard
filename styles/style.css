@@ -14,13 +14,13 @@
     --h2-size: 1.4rem;
     /*Define main colors and whichever matches matches.*/
     --accent-clr: azure;
-    --accent-clr-hover: #1B2845;
-    --main-clr: #f8a2a5;
+    --accent-clr-hover: #ffc3c5;
+    --main-clr: #a2a8f8;
     --bg-clr: rgb(217, 222, 245);
     --card-clr: azure;
     --bold-heading-clr: 040403;
     --muted-text-clr: #777;
-    --box-shadow: transparent;
+    --box-shadow: grey;
     --primary-text-clr: rgb(255, 255, 255);
     --secondary-text-clr: white; 
     --profile-photo-small-size: 55px;
@@ -68,7 +68,7 @@ div.container {
     /*column gap only for 2 columns not in preparation for new rows*/
     column-gap: var(--gap);
     padding: var(--padding) var(--padding) var(--padding) var(--padding);
-    box-shadow: 2px 2px 6px var(--box-shadow) inset;
+    box-shadow: 0px 2px 6px var(--box-shadow) inset;
 }
 
 button:hover {
@@ -129,7 +129,7 @@ button:hover {
     grid-area: 1 / 2 / 3 / 3;
     display: flex;
     flex-direction: column;
-    max-height: 1062px;
+    max-height: 817px;
 }
 
 .side-panel .content {
