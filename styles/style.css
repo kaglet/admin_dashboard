@@ -13,13 +13,14 @@
     --heading-gap: 0.4rem;
     --h2-size: 1.4rem;
     /*Define main colors and whichever matches matches.*/
-    --accent-clr: white;
-    --accent-clr-hover: white;
-    --main-clr: #FFC43D;
-    --bg-clr: #f6f0e3;
-    --card-clr: rgb(241, 241, 241);
+    --accent-clr: rgb(241, 241, 241);
+    --accent-clr-hover: #f8a2a5;
+    --main-clr: #329F5B;
+    --bg-clr: #8FD5A6;
+    --card-clr: rgb(255, 255, 255);
     --bold-heading-clr: 040403;
     --muted-text-clr: #777;
+    --box-shadow: transparent;
     --primary-text-clr: rgb(255, 255, 255);
     --secondary-text-clr: white; 
     --profile-photo-small-size: 55px;
@@ -40,7 +41,7 @@ div.container {
     display: grid;
     min-height: 100vh;
     grid: 
-    "sidebar header" 15%
+    "sidebar header" 17%
     "sidebar article" 1fr / 1fr 4fr
     ;
 }
@@ -49,6 +50,7 @@ div.container {
     grid-area: header;
     padding: var(--padding);
     background-color: var(--card-clr);
+    color: black;
 }
 
 .sidebar {
@@ -66,11 +68,11 @@ div.container {
     /*column gap only for 2 columns not in preparation for new rows*/
     column-gap: var(--gap);
     padding: var(--padding) var(--padding) var(--padding) var(--padding);
-    box-shadow: 2px 2px 6px grey inset;
+    box-shadow: 2px 2px 6px var(--box-shadow) inset;
 }
 
 button:hover {
-    box-shadow: 0px 2px 6px grey;
+    box-shadow: 0px 2px 6px var(--box-shadow);
 }
 
 .sidebar .wrapper:hover:not(.dashboard) {
@@ -82,7 +84,7 @@ button:hover {
 /*ARTICLE INNER LAYOUT*/
 .content {
     border-radius: 0.9rem;
-    box-shadow: 2px 2px 6px grey;
+    box-shadow: 2px 2px 6px var(--box-shadow);
 }
 
 .projects-container > .content {
@@ -118,7 +120,7 @@ button:hover {
 .projects-container {
     flex: 1;
     display: grid;
-    grid: repeat(3, 20rem) / repeat(2, 1fr);
+    grid: repeat(3, 15rem) / repeat(2, 1fr);
     grid-auto-rows: 1fr;
     gap: var(--gap);
 }
@@ -172,6 +174,10 @@ section.announcement:not(:last-child) {
     gap: 1rem;
 }
 
+.pic {
+    background-color: var(--main-clr);
+}
+/* 
 .trending .pic {
     min-height: var(--profile-photo-small-size);
     min-width: var(--profile-photo-small-size);
@@ -197,7 +203,7 @@ section.announcement:not(:last-child) {
 
 .pic.me {
     background-image: url(../assets/pics/3d-render-avatar-character/9334392.jpg);
-}
+} */
 
 h2 {
     margin-bottom: 0.4rem;
@@ -257,7 +263,7 @@ input[type="search"] {
     border: none;
     padding: 0.5rem 0.7rem;
     flex: 1;
-    box-shadow: -1px 1px 4px grey inset;
+    box-shadow: -1px 1px 4px var(--box-shadow) inset;
 }
 
 input[type="search"]:focus {
