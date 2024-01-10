@@ -13,11 +13,11 @@
     --heading-gap: 0.4rem;
     --h2-size: 1.4rem;
     /*Define main colors and whichever matches matches.*/
-    --accent-clr: azure;
+    --accent-clr: #FF6F59;
     --accent-clr-hover: #ffc3c5;
-    --main-clr: #fbb5b7;
-    --bg-clr: rgb(217, 222, 245);
-    --card-clr: azure;
+    --main-clr: #FF6F59;
+    --bg-clr: rgb(240, 240, 240);
+    --card-clr: whitesmoke;
     --bold-heading-clr: 040403;
     --muted-text-clr: #777;
     --box-shadow: grey;
