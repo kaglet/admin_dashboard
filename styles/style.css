@@ -29,6 +29,10 @@
     --border-radius: 0.4rem;
 }
 
+body {
+    background-color: #2d2d2d;
+}
+
 h1, h2, h3, h4 {
     color: var(--bold-heading-clr);
 }
@@ -45,11 +49,15 @@ div.container {
     "sidebar header" 17%
     "sidebar article" 1fr / 1fr 4fr
     ;
+    
 }
 
 .header {
     grid-area: header;
-    padding: var(--padding);
+    justify-self: center;
+    align-self: center;
+    padding: 2.5rem 3.7rem 0rem 3.7rem;
+    border-radius: var(--border-radius);
     background-color: var(--card-clr);
     color: black;
 }
@@ -63,13 +71,13 @@ div.container {
 .article {
     grid-area: article;
     color: black;
-    background-color: var(--bg-clr);
+    /* background-color: var(--bg-clr); */
     display: grid;
     grid: 1fr / 5fr 2fr;
     /*column gap only for 2 columns not in preparation for new rows*/
     column-gap: var(--gap);
     padding: var(--padding) var(--padding) var(--padding) var(--padding);
-    box-shadow: 0px 2px 6px var(--box-shadow) inset;
+    /* box-shadow: 0px 2px 6px var(--box-shadow) inset; */
 }
 
 button:hover {
