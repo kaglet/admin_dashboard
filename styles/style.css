@@ -29,10 +29,6 @@
     --border-radius: 0.4rem;
 }
 
-body {
-    background-color: #2d2d2d;
-}
-
 h1, h2, h3, h4 {
     color: var(--bold-heading-clr);
 }
@@ -46,18 +42,14 @@ div.container {
     display: grid;
     min-height: 100vh;
     grid: 
-    "sidebar header" 17%
+    "sidebar header" 13%
     "sidebar article" 1fr / 1fr 4fr
     ;
-    
 }
 
 .header {
     grid-area: header;
-    justify-self: center;
-    align-self: center;
-    padding: 2.5rem 3.7rem 0rem 3.7rem;
-    border-radius: var(--border-radius);
+    padding: 0.3rem var(--padding);
     background-color: var(--card-clr);
     color: black;
 }
@@ -71,13 +63,13 @@ div.container {
 .article {
     grid-area: article;
     color: black;
-    /* background-color: var(--bg-clr); */
+    background-color: var(--bg-clr);
     display: grid;
     grid: 1fr / 5fr 2fr;
     /*column gap only for 2 columns not in preparation for new rows*/
     column-gap: var(--gap);
     padding: var(--padding) var(--padding) var(--padding) var(--padding);
-    /* box-shadow: 0px 2px 6px var(--box-shadow) inset; */
+    box-shadow: 0px 2px 6px var(--box-shadow) inset;
 }
 
 button:hover {
@@ -253,7 +245,7 @@ h2 {
 }
 
 button, input[type="search"] {
-    font-size: 1.1rem;
+    font-size: 0.98rem;
 }
 
 /*ARTICLE INNER LAYOUT DONE*/
@@ -262,8 +254,8 @@ button, input[type="search"] {
 
 .header {
     display: grid;
-    grid: 1fr 2fr / 5fr 3fr;
-    gap: 1.3rem;
+    grid: 1fr 1fr / 5fr 3fr;
+    gap: 0.3rem;
 }
 
 .project-options {
@@ -274,7 +266,7 @@ button, input[type="search"] {
 
 .project-options button {
     flex: 1;
-    padding: 0.6rem 1.6rem;
+    padding: 0.3rem 1.6rem;
     border-radius: 1.3rem;
     appearance: none;
     background-color: var(--main-clr);
@@ -299,7 +291,7 @@ input[type="search"] {
     background-color: var(--bg-clr);
     border-radius: 1.3rem;
     border: none;
-    padding: 0.5rem 0.7rem;
+    padding: 0.3rem 0.7rem;
     flex: 1;
     box-shadow: -1px 1px 4px var(--box-shadow) inset;
 }
