@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@400;500;600&family=Nunito:wght@500;700;800&family=Roboto+Slab:wght@400;500;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,14 +13,14 @@
     --heading-gap: 0.4rem;
     --h2-size: 1.4rem;
     /*Define main colors and whichever matches matches.*/
-    --accent-clr: #7798AB;
-    --accent-clr-hover: #78b2ba;
-    --main-clr: #7DBBC3;
-    --bg-clr: #F4B9B2;
-    --card-clr: #E8DCB9;
-    --bold-heading-clr: black;
+    --accent-clr: white;
+    --accent-clr-hover: white;
+    --main-clr: #FFC43D;
+    --bg-clr: #f6f0e3;
+    --card-clr: rgb(241, 241, 241);
+    --bold-heading-clr: 040403;
     --muted-text-clr: #777;
-    --primary-text-clr: black;
+    --primary-text-clr: rgb(255, 255, 255);
     --secondary-text-clr: white; 
     --profile-photo-small-size: 55px;
     --pic-placeholder-clr: var(--accent-clr);
@@ -59,6 +59,7 @@ div.container {
 
 .article {
     grid-area: article;
+    color: black;
     background-color: var(--bg-clr);
     display: grid;
     grid: 1fr / 5fr 2fr;
@@ -268,7 +269,7 @@ input[type="search"]:focus {
     display: flex;
     align-items: center;
     gap: 1.2rem;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .profile-options > p {
