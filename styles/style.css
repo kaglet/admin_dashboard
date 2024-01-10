@@ -1,9 +1,11 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500;600&family=Roboto+Slab:wght@400;500;800&family=Rubik:wght@400;600&family=Tektur:wght@400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Rubik', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 :root {
@@ -38,8 +40,12 @@ h1, h2, h3, h4 {
 }
 
 h2, .greeting p {
-    font-family: 'Kalnia';
+    font-family: 'Roboto Slab', serif;
 } 
+
+.sidebar h2 {
+    font-family: 'Tektur', monospace;
+}
 
 /*OVERALL LAYOUT START*/
 div.container {
@@ -368,7 +374,8 @@ input[type="search"]:focus {
 }
 
 .sidebar h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
 }
 
 .sidebar > section {
