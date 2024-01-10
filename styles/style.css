@@ -98,8 +98,9 @@ button:hover {
 }
 
 .projects-container > .content {
-    /* border-left: 0.6rem solid var(--accent-clr); */
+    right: 0px;
     display: flex;
+    transition: 0.3s linear right;
 }
 
 .projects-container > .content .wrapper {
