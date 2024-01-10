@@ -94,9 +94,18 @@ button:hover {
 
 .projects-container > .content {
     /* border-left: 0.6rem solid var(--accent-clr); */
+    display: flex;
+}
+
+.projects-container > .content .wrapper {
     padding: var(--padding);
     display: flex;
     flex-direction: column;
+    flex: 1;
+}
+
+.projects-container > .content .pic {
+    flex: 1;
 }
 
 .projects-container .desc {
