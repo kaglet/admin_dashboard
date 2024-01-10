@@ -14,14 +14,14 @@
     --h2-size: 1.4rem;
     /*Define main colors and whichever matches matches.*/
     --accent-clr: #979797;
-    --accent-clr-hover: #ffb6b8;
-    --main-clr: #FF6F59;
-    --bg-clr: rgb(240, 240, 240);
+    --accent-clr-hover: #ff9d52;
+    --main-clr: #fb8830;
+    --bg-clr: rgb(55, 55, 55);
     --card-clr: whitesmoke;
-    --bold-heading-clr: 040403;
+    --bold-heading-clr: #040403;
     --muted-text-clr: #777;
-    --box-shadow: grey;
-    --primary-text-clr: rgb(255, 255, 255);
+    --box-shadow: rgb(27, 27, 27);
+    --primary-text-clr: black;
     --secondary-text-clr: white; 
     --profile-photo-small-size: 55px;
     --pic-placeholder-clr: var(--accent-clr);
@@ -31,6 +31,10 @@
 
 h1, h2, h3, h4 {
     color: var(--bold-heading-clr);
+}
+
+.article h2 {
+    color: white;
 }
 
 h2, .greeting p {
@@ -50,14 +54,14 @@ div.container {
 .header {
     grid-area: header;
     padding: 0.3rem var(--padding);
-    background-color: var(--card-clr);
-    color: black;
+    background-color: rgb(36, 36, 36);
+    color: var(--secondary-text-clr);
 }
 
 .sidebar {
     grid-area: sidebar;
     background-color: var(--main-clr);
-    color: var(--secondary-text-clr);
+    color: var(--primary-text-clr);
 }
 
 .article {
@@ -73,7 +77,7 @@ div.container {
 }
 
 button:hover {
-    box-shadow: 0px 2px 6px var(--box-shadow);
+    box-shadow: 0px 0px 25px var(--accent-clr-hover), 0px 0px 9px var(--accent-clr-hover) inset;
 }
 
 .sidebar .wrapper:hover:not(.dashboard) {
@@ -86,7 +90,7 @@ button:hover {
 .content {
     border-radius: var(--border-radius);
     position: relative;
-    box-shadow: 2px 2px 6px var(--box-shadow);
+    box-shadow: 2px 2px 10px 5px var(--box-shadow);
 }
 
 .projects-container > .content:hover {
@@ -270,7 +274,7 @@ button, input[type="search"] {
     border-radius: 1.3rem;
     appearance: none;
     background-color: var(--main-clr);
-    color: var(--secondary-text-clr);
+    color: var(--primary-text-clr);
     border: none;
     font-weight: 700;
     transition: 0.1s linear transform;
@@ -294,11 +298,11 @@ input[type="search"] {
     padding: 0.3rem 0.7rem;
     flex: 1;
     box-shadow: -1px 1px 4px var(--box-shadow) inset;
+    color: var(--secondary-text-clr);
 }
 
 input[type="search"]:focus {
     outline: 2px solid var(--muted-text-clr);
-    
 }
 
 .profile-options {
@@ -309,7 +313,7 @@ input[type="search"]:focus {
 }
 
 .profile-options > p {
-    color: var(--bold-heading-clr);
+    color: var(--secondary-text-clr);
     font-weight: 700;
 }
 
@@ -330,12 +334,12 @@ input[type="search"]:focus {
 }
 
 .greeting > p:first-child {
-    color: var(--bold-heading-clr);
+    color: var(--secondary-text-clr);
     font-weight: 700;
 }
 
 .greeting > p:last-child {
-    color: var(--bold-heading-clr);
+    color: var(--secondary-text-clr);
     font-weight: 700;
     font-size: 2rem;
 }
@@ -363,7 +367,6 @@ input[type="search"]:focus {
 
 .sidebar h2 {
     font-size: 2rem;
-    color: var(--secondary-text-clr);
 }
 
 .sidebar > section {
@@ -391,12 +394,12 @@ input[type="search"]:focus {
     transition: 0.1s linear transform;
 }
 
-.icon:hover {
-    transform: scale(1.3);
+.header .icon {
+    filter: invert(1);
 }
 
-.sidebar .icon {
-    filter: invert(1);
+.icon:hover {
+    transform: scale(1.3);
 }
 
 .profile-options .icon {
