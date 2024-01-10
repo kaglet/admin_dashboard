@@ -216,8 +216,9 @@ section.announcement:last-child {
 
 .pic {
     background-color: var(--main-clr);
+    background-size: 100% 100%;
 }
-/* 
+
 .trending .pic {
     min-height: var(--profile-photo-small-size);
     min-width: var(--profile-photo-small-size);
@@ -225,20 +226,20 @@ section.announcement:last-child {
 }
 
 .trending .profile:nth-child(1) .pic {
-    background-image: url(../assets/pics/3d-render-avatar-character-2/9334410.jpg);
+    background-image: url(../assets/pics/profile-avatars/gaspar-uhas-j_DmMNZK-jo-unsplash.jpg);
 }
 
 .trending .profile:nth-child(3) .pic {
-    background-image: url(../assets/pics/3d-render-avatar-character-1/9334183.jpg);
+    background-image: url(../assets/pics/profile-avatars/tim-mossholder-tq8Cuap8_wY-unsplash.jpg);
 }
 
 .trending .profile:nth-child(4) .pic {
-    background-image: url(../assets/pics/3d-render-avatar-character-2/9334410.jpg);
+    background-image: url(../assets/pics/profile-avatars/donald-wu-gOtoP-sAp5Q-unsplash.jpg);
 }
 
 .pic.me {
-    background-image: url(../assets/pics/3d-render-avatar-character/9334392.jpg);
-} */
+    background-image: url(../assets/pics/profile-avatars/kobby-mendez-d0oYF8hm4GI-unsplash.jpg);
+}
 
 h2 {
     margin-bottom: 0.4rem;
@@ -310,7 +311,7 @@ input[type="search"]:focus {
     display: flex;
     align-items: center;
     gap: 1.2rem;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .profile-options > p {
