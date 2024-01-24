@@ -1,6 +1,6 @@
 # admin_dashboard
 
-This is a front end dashboard design project mainly demonstrating newly learned skills in extensive grid layout, with some flex-box and responsive design. This is the 4th and final project for the Intermediate HTML and CSS section, made as part of [The Odin Project](https://www.theodinproject.com) open source web development course. 
+This is a front end dashboard design project mainly demonstrating newly learned skills in extensive grid layout with some flex-box, for a responsive design. This is the 4th and final project for the Intermediate HTML and CSS section, made as part of [The Odin Project](https://www.theodinproject.com) open source web development course. 
 
 Find the live demo [here](https://kaglet.github.io/admin_dashboard/).
 
